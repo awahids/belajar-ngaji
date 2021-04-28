@@ -1,3 +1,3 @@
 # belajar-ngaji
 
-live demo belajarngaji.rf.gd
+live demo http://belajarngaji.rf.gd
