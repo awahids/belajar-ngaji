@@ -23,16 +23,22 @@
   <body>
     <nav class="white" role="navigation">
       <div class="nav-wrapper container">
-        <a id="logo-container" href="index.html" class="brand-logo"><img src="./img/logo2.png"></a>
+        <a id="logo-container" href="index.html" class="brand-logo">
+          <img src="./img/logo2.png">
+        </a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="hijaiyah.html">Huruf Hijaiyah</a></li>
-          <li><a href="nulis.html">Nulis Hijaiyah</a></li>
+          <li>
+            <a href="#service">Service</a>
+          </li>
+          <li>
+            <a href="#about">About Us</a>
+          </li>
         </ul>
-        <ul id="nav-mobile" class="sidenav">
+        <!-- <ul id="nav-mobile" class="sidenav">
           <li class="active"><a href="hijaiyah.html"><i class="material-icons">spellcheck</i>Huruf Hijaiyah</a></li>
           <li><a href="nulis.html"><i class="material-icons">edit</i>Nulis Hijaiyah</a></li>
         </ul>
-        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
       </div>
     </nav>
     
@@ -45,17 +51,47 @@
             <h5 class="header col s12 light">come on!! start learning The Quran from basics</h5>
           </div>
           <div class="row center">
-            <!-- <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a> -->
+            <a class="waves-effect waves-light btn-large disabled">
+              <i class="material-icons left">login</i>Log in
+            </a>
           </div>
           <br><br>
         </div>
       </div>
       <div class="parallax"><img src="./img/muslims-reading-from-quran.jpg" alt="Unsplashed background img 1"></div>
     </div>
-    
-
-
+    <!-- menu -->
     <div class="container center">
+      <div class="section">
+        <!--   Icon Section   -->
+        <div class="row">
+          <div class="col s12 center">
+              <!-- Dropdown Trigger -->
+              <a class='dropdown-trigger btn btn-large waves-effect waves-light ' data-target='Hijaiyah'>
+                Hijaiyah
+              </a>
+              <a href="al-quran.html" class="btn btn-large waves-effect waves-light">
+                Al-Quran
+              </a>
+              <!-- Dropdown Structure -->
+              <ul id='Hijaiyah' class='dropdown-content'>
+                <li>
+                  <a href="huruf.html" class="waves-effect waves-teal">
+                    <i class="material-icons">sort_by_alpha</i>Huruf
+                  </a>
+                </li>
+                <li>
+                  <a href="nulis.html">
+                    <i class="material-icons">mode_edit</i>Nulis
+                  </a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container center" id="service">
       <div class="section">
         <!--   Icon Section   -->
         <div class="row">
@@ -87,12 +123,34 @@
       </div>
     </div>
 
+    <div class="container" id="about">
+      <div class="section">
+        <div class="row">
+          <div class="col s12 center">
+            <h3><i class="mdi-content-send brown-text"></i></h3>
+            <h4 class="white-text">About Us</h4>
+            <p class="center">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer class="page-footer center">
       <div class="container">
         <div class="row">
-          <div>
-            <h5 class="white-text">About Us</h5>
-            <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          <div class="icon-sosial">
+            <a href="mailto:awahid.safhadi@gmail.com" class="btn-floating tooltipped teal darken-3" data-position="top" data-tooltip="email">
+              <i class="material-icons">mail_outline</i>
+            </a>
+            <a href="https://twitter.com/awahids_" class="btn-floating tooltipped blue darken-2" data-position="top" data-tooltip="twitter">
+              <i class='bx bxl-twitter'></i>
+            </a>
+            <a href="https://github.com/awahids" class="btn-floating tooltipped green darken-3" data-position="top" data-tooltip="github">
+              <i class='bx bxl-github'></i>
+            </a>
+            <a href="https://www.linkedin.com/in/awahids/" class="btn-floating tooltipped yellow darken-3" data-position="top" data-tooltip="linked in">
+              <i class='bx bxl-linkedin'></i>
+            </a>
           </div>
         </div>
       </div>
@@ -114,7 +172,7 @@
       </div>
     </footer>
 
-    <div class="fixed-action-btn">
+    <!-- <div class="fixed-action-btn">
       <a class="btn-floating btn-large tooltipped red pulse" data-position="left" data-tooltip="contact us">
           <i class='bx bxs-contact'></i>
       </a>
@@ -140,21 +198,16 @@
           </a>
         </li>
       </ul>
-    </div>
+    </div> -->
 
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
 
-    <!-- floating -->
+    <!-- dropdown menu -->
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-          var elems = document.querySelectorAll('.fixed-action-btn');
-          var instances = M.FloatingActionButton.init(elems, {
-          direction: 'top'
-          });
-      });
+      $('.dropdown-trigger').dropdown();
     </script>
 
     <!-- tooltipped -->

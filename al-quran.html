@@ -27,65 +27,50 @@
                 <a id="logo-container" href="index.html" class="brand-logo center">
                     <img src="./img/logo2.png">
                 </a>
-                    <!-- <ul class="right hide-on-med-and-down">
-                        <li><a href="#service">Service</a></li>
-                        <li><a href="#about">About Us</a></li>
-                    </ul> -->
-    
-                    <!-- <ul id="nav-mobile" class="sidenav">
-                        <li class="active"><a href="hijaiyah.html"><i class="material-icons">spellcheck</i>Huruf Hijaiyah</a></li>
-                        <li><a href="nulis.html"><i class="material-icons">edit</i>Nulis Hijaiyah</a></li>
-                    </ul>-->
+                <!-- <ul class="right hide-on-med-and-down">
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul> -->
+
+                <!-- <ul id="nav-mobile" class="sidenav">
+                    <li class="active"><a href="hijaiyah.html"><i class="material-icons">spellcheck</i>Huruf Hijaiyah</a></li>
+                    <li><a href="nulis.html"><i class="material-icons">edit</i>Nulis Hijaiyah</a></li>
+                </ul> -->
                 <a href="index.html" data-target="nav-mobile" class="sidenav-trigger right">
-                        <i class="material-icons">chevron_left</i>
+                    <i class="material-icons">chevron_left</i>
                 </a>
             </div>
         </nav>
-        
+
         <div id="index-banner" class="parallax-container">
             <div class="section no-pad-bot">
             <div class="container">
                 <br><br>
-                <h1 class="header center">Huruf Hijaiyah</h1>
+                <h1 class="header center">Al-Quran</h1>
                 <div class="row center">
-                    <h5 class="header col s12 light z-depth-5">Ayo mulai belajar mengenal huruf hijaiyah dan pelafalannya</h5>
+                    <h5 class="header col s12 light z-depth-5">Ayo mulai mengaji</h5>
                 </div>
-                <div class="center">
-                    <p>klik huruf hijaiyah untuk mendengarkan bunyi dan pelafalannya</p>
-                </div>
-                <br><br>
+                <!-- <div class="center">
+                    <p>pilih surat</p>
+                </div> -->
             </div>
             </div>
             <div class="parallax"><img src="./img/muslims-reading-from-quran.jpg" alt="Unsplashed background img 1"></div>
         </div>
 
         <div class="container">
-            <div class="section center">
+            <div class="section">
                 <!--   Icon Section   -->
                 <div class="row">
-                    <ul class="collapsible popout">
-                        <li>
-                            <div class="collapsible-header">Alif</div>
-                            <div class="collapsible-body">
-                                <img src="./animasi/alif.gif" class="responsive-img" alt="alif">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header">Ba</div>
-                            <div class="collapsible-body">
-                                <img src="./animasi/ba.gif" class="responsive-img" alt="ba">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header">Ta</div>
-                            <div class="collapsible-body">
-                                <img src="./animasi/ta.gif" class="responsive-img" alt="ta">
-                            </div>
-                        </li>
-                    </ul>
+                    <main class="alquran">
+                        <table class="striped date-text">
+                            <tbody id="list" class="list-alquran"></tbody>
+                        </table>
+                    </main>
                 </div>
             </div>
         </div>
+        
         <footer class="page-footer center">
             <div class="container">
                 <div class="row">
@@ -109,14 +94,14 @@
                 <div class="container">
                     Made with
                     <svg width="13" height="10" viewBox="0 0 100 100">
-                        <path fill="red" d="M92.71,7.27L92.71,7.27c-9.71-9.69-25.46-9.69-35.18,0L50,14.79l-7.54-7.52C32.75-2.42,17-2.42,7.29,7.27v0 c-9.71,9.69-9.71,25.41,0,35.1L50,85l42.71-42.63C102.43,32.68,102.43,16.96,92.71,7.27z"></path>
-                        <animateTransform 
+                    <path fill="red" d="M92.71,7.27L92.71,7.27c-9.71-9.69-25.46-9.69-35.18,0L50,14.79l-7.54-7.52C32.75-2.42,17-2.42,7.29,7.27v0 c-9.71,9.69-9.71,25.41,0,35.1L50,85l42.71-42.63C102.43,32.68,102.43,16.96,92.71,7.27z"></path>
+                    <animateTransform 
                         attributeName="transform" 
                         type="scale" 
                         values="1; 1.5; 1.25; 1.5; 1.5; 1;" 
                         dur="1s" 
                         repeatCount="indefinite">      
-                        </animateTransform>
+                    </animateTransform>
                     </svg>
                     by <a class="brown-text text-lighten-3" href="#">Awahid Safhadi</a>
                 </div>
@@ -156,13 +141,8 @@
         <script src="js/materialize.js"></script>
         <script src="js/init.js"></script>
         <script src="./js/main.js"></script>
-
-        <!-- tabs -->
-        <script>
-            $(document).ready(function(){
-                $('.collapsible').collapsible();
-            });
-        </script>
+        <script src="./js/script.js"></script>
+        <script src="./js/storage.js"></script>
 
         <!-- floating -->
         <!-- <script>
@@ -175,6 +155,10 @@
         </script> -->
 
         <!-- tooltipped -->
+        <script>
+            quranPage();
+        </script>
+
         <script>
             $(document).ready(function(){
                 $('.tooltipped').tooltip();
