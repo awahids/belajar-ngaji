@@ -1,3 +1,3 @@
 # belajar-ngaji
 
-live demo http://belajarngaji.rf.gd
+live demo http://belajar-ngaji.netlify.app
