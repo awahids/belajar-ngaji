@@ -1,3 +1,3 @@
 # belajar-ngaji
 
-live demo http://belajar-ngaji.netlify.app
+live demo [http://belajar-ngaji.netlify.app](https://belajar-ngaji.awahids.my.id/)
